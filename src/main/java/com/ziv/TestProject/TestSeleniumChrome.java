@@ -20,7 +20,7 @@ public class TestSeleniumChrome {
 		WebElement element = driver.findElement(By.name("q"));
 		element.sendKeys("Testing Search ");
 		element.submit();
-		// driver.quit();
+		driver.quit();
 	}
 
 }
