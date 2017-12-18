@@ -11,13 +11,65 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java-version>1.6</java-version>
+		<spring.version>4.3.9.RELEASE</spring.version>
+		<java-version>1.8</java-version>
 		<selenium-java.version>3.8.1</selenium-java.version>
 		<selenium-chrome-driver.version>3.8.1</selenium-chrome-driver.version>
 		<selenium-firefox-driver.version>3.8.1</selenium-firefox-driver.version>
+		<spring.version>4.3.9.RELEASE</spring.version>
+		<hibernate.version>5.1.9.Final</hibernate.version>
+		<mysql.connector.version>5.1.43</mysql.connector.version>
 	</properties>
 
 	<dependencies>
+
+		<!-- @@@@@ Spring dependency @@@@@ -->
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-context-support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		<!-- @@@@@ ORM dependency @@@@@ -->
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+			<version>${hibernate.version}</version>
+		</dependency>
+
+
+		<!-- @@@@@ Database connector dependency @@@@@ -->
+		<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.connector.version}</version>
+		</dependency>
+
+
 		<!-- Servlet 3.0 API -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
